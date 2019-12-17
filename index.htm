@@ -101,11 +101,34 @@
         height: 70px;
         line-height: 70px;
     }
+    .newLink{
+        position: fixed;
+        top: 0;
+        left: 0;
+        color: red;
+        background: #FDEBD0;
+        z-index: 99;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        font-family: Helvetica-Bold, Helvetica;
+        text-align: center;
+    }
+
+    .linkBtn{
+        background: #2196F3;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 3px 6px;
+    }
     </style>
     <style type="text/css"></style>
 </head>
 <body>
-<div class="uk-sticky-placeholder" style="margin: 0px;">
+<div class="newLink">请访问我们新的官网地址 chunjizhang.com <a class="linkBtn" href="https://www.chunjizhang.com/">跳转</a></div>
+<div class="uk-sticky-placeholder" style="margin: 35px 0 0 0;">
     <div class="uk-sticky-placeholder" style="margin: 0px;">
         <div class="topBg tm-navbar tm-navbar-overlay tm-navbar-transparent tm-navbar-contrast"
              data-uk-sticky="{&quot;media&quot;:767,&quot;showup&quot;:true,&quot;animation&quot;:&quot;uk-animation-slide-top&quot;,&quot;top&quot;:&quot;.uk-sticky-placeholder + *&quot;,&quot;clsinactive&quot;:&quot;tm-navbar-transparent tm-navbar-contrast&quot;}"
@@ -153,7 +176,7 @@
                         <!--<br class="uk-hidden-small">-->
                         <!--An Android Developer.-->
                     </h1>
-                    <a class="uk-button uk-button-large download_url" href="./index/chunjizhang.apk" >下载纯记账</a>
+                    <a class="uk-button uk-button-large download_url" href="https://www.chunjizhang.com/index/chunjizhang.apk" >下载纯记账</a>
                     <div><br><a href="https://green-android.org/" >遵循Android绿色应用公约，共同打造健康的Android生态</a></div>
                 </div>
             </div>
@@ -179,7 +202,7 @@
                                         纯记账，只记账
                                         <br>
                                     </p>
-                                    <p><a href="./index/chunjizhang.apk" class="download_url">点击下载</a></p>
+                                    <p><a href="https://www.chunjizhang.com/index/chunjizhang.apk" class="download_url">点击下载</a></p>
                                     <img src="./index/c_1.png" width="320">
                                     <img src="./index/c_2.png" width="320">
                                     <img src="./index/c_3.png" width="320">
@@ -273,9 +296,9 @@
 
     //苹果
     if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
-        $(".download_url").attr({"href":"#"});
+       $(".download_url").attr({"href":"https://www.chunjizhang.com/index/chunjizhang.apk"});
        $(".download_url").on("click",function(){
-            alert("Come Soon");
+            alert("chunjizhang for iOS Come Soon");
        })
     }
     //安卓
@@ -284,7 +307,7 @@
         if(is_weixn()){
             $(".download_url").attr({"href":"./index/jump.htm"});
         }else{
-            $(".download_url").attr({"href":"./index/chunjizhang.apk"});
+            $(".download_url").attr({"href":"https://www.chunjizhang.com/index/chunjizhang.apk"});
         }
 
     }
